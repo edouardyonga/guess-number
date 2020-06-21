@@ -1,0 +1,51 @@
+
+.container{
+	padding: 30px 0px 0px 43%;
+	/*display: none;*/
+}
+.animation{
+	padding: 30px 0px 0px 43%;
+}
+
+span{
+	color: #4285F4;
+}
+/*#the_username{
+	color: gray;
+}
+#turn{
+	color: gray;
+}*/
+
+.balloon {
+  width: 100px;
+  padding-right: 55%;
+  float: right;
+  position: relative;
+}
+.balloon img{
+	width: 100%;
+
+}
+
+.niddle {
+  width: 100px;
+  /*left: 173px;*/
+  padding-top: 50px;
+  position: relative;
+}
+.niddle img{
+  width: 100%;
+}
+
+.pop{
+	width: 250px;
+	padding-right: 55%;
+	float: right;
+	position: relative;
+	display: none;
+}
+.pop img{
+	width: 100%;
+
+}

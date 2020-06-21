@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Guest Number</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- <div class="container signIn">
+		<form method="POST" action="">
+			<h3>Create a user:</h3>
+			<input type="text" name="username" placeholder="Username" required>
+			<br><br>
+			<input type="password" name="password" placeholder="Password" required>
+			<br><br>
+			<button type="submit" onclick="register()">Submit</button>
+		</form>
+	</div> -->
+	<div class="container username">
+		<h2>Username</h2>
+		<input type="text" name="username" id="username">
+		<button onclick="getUsername()" id="btn_username">ok</button>
+	</div>
+	<div class="container level">
+		<h2>Level</h2>
+		<input type="radio" id="easy" name="level" value="easy">
+		<label for="easy">Easy</label><br>
+		<input type="radio" id="normal" name="level" value="normal">
+		<label for="normal">Normal</label><br>
+		<input type="radio" id="expert" name="level" value="expert">
+		<label for="expert">Expert</label> <br><br>
+		<button onclick="getLevel()" id="btn_level">ok</button>
+	</div>
+	<div class="container" id="main">
+		<h1>Welcome <span id="the_username"></span></h1>
+		<h3 id="random"></h3>
+		<h3> Turn left: <span id="turn"></span></h3>
+		<p>Guest the number:</p>
+		<input type="text" name="number" id="input">
+		<button onclick="submit()" id="btn">Try it</button>
+		<p>Previous Guest: <span id="previous"></span></p>
+		<h3 id="guest"></h3>
+
+		<button onclick="newGame()" id="reload">New game</button>
+	</div>
+	<div class="animation">
+		<div class="pop">
+			<img src="img/pop.png">
+		</div>
+		<div class="balloon">
+			<img src="img/balloon.png">
+		</div>
+		<div class="niddle">
+			<img src="img/niddle.png">
+		</div>
+
+		<!-- <button onclick="myMove()">Launch</button> -->
+	</div>
+</body>
+<script type="text/javascript" src="logic.js"></script>
+</html>
