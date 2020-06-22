@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>Guest Number</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	  <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
 </head>
 <body>
 	<!-- <div class="container signIn">
@@ -17,41 +19,51 @@
 		</form>
 	</div> -->
 	<div class="container username">
-		<h2>Username</h2>
+		<h2 class="animate__animated animate__bounce">Username</h2>
 		<input type="text" name="username" id="username">
-		<button onclick="getUsername()" id="btn_username">ok</button>
+		<button onclick="getUsername()" class="" id="btn_username">Next</button>
 	</div>
 	<div class="container level">
 		<h2>Level</h2>
-		<input type="radio" id="easy" name="level" value="easy">
-		<label for="easy">Easy</label><br>
-		<input type="radio" id="normal" name="level" value="normal">
-		<label for="normal">Normal</label><br>
-		<input type="radio" id="expert" name="level" value="expert">
-		<label for="expert">Expert</label> <br><br>
-		<button onclick="getLevel()" id="btn_level">ok</button>
+		<fieldset class="form-group">
+		  <legend>Select your level</legend>
+		  <label for="easy" class="paper-radio">
+		    <input type="radio" name="level" id="easy" value="easy"> 
+		    <span>Easy<span>
+		  </label>
+		  <label for="normal" class="paper-radio">
+		    <input type="radio" name="level" id="normal" value="normal"> 
+		    <span>Normal<span>
+		  </label>
+		  <label for="expert" class="paper-radio">
+		    <input type="radio" name="level" id="expert" value="expert"> 
+		    <span>Expert<span>
+		  </label>
+		  <button onclick="getLevel()" id="btn_level">Next</button>
+		</fieldset>
+		
 	</div>
 	<div class="container" id="main">
-		<h1>Welcome <span id="the_username"></span></h1>
-		<h3 id="random"></h3>
-		<h3> Turn left: <span id="turn"></span></h3>
+		<h2>Welcome <span id="the_username"></span></h2>
+		<h4 id="random"></h4>
+		<h4> Turn left: <span id="turn"></span></h4>
 		<p>Guest the number:</p>
 		<input type="text" name="number" id="input">
-		<button onclick="submit()" id="btn">Try it</button>
+		<button onclick="submit()" class="btn-secondary" id="btn">Try it</button>
 		<p>Previous Guest: <span id="previous"></span></p>
 		<h3 id="guest"></h3>
 
-		<button onclick="newGame()" id="reload">New game</button>
+		<button onclick="newGame()" class="btn-block btn-primary" id="reload">New game</button>
 	</div>
 	<div class="animation">
 		<div class="pop">
-			<img src="img/pop.png">
+			<img src="img/pop.png" class="no-responsive no-border">
 		</div>
 		<div class="balloon">
-			<img src="img/balloon.png">
+			<img src="img/balloon.png" class="no-responsive no-border">
 		</div>
 		<div class="niddle">
-			<img src="img/niddle.png">
+			<img src="img/niddle.png" class="no-responsive no-border">
 		</div>
 
 		<!-- <button onclick="myMove()">Launch</button> -->
